@@ -3,7 +3,7 @@
   <groupId>com.cinefms.dbstore</groupId>
   <artifactId>dbstore</artifactId>
   <versioning>
-    <release>0.10.4</release>
+    <release>0.10.5</release>
     <versions>
       <version>0.6.39</version>
       <version>0.6.78</version>
@@ -38,7 +38,8 @@
       <version>0.10.2</version>
       <version>0.10.3</version>
       <version>0.10.4</version>
+      <version>0.10.5</version>
     </versions>
-    <lastUpdated>20231129215151</lastUpdated>
+    <lastUpdated>20231130081906</lastUpdated>
   </versioning>
 </metadata>
