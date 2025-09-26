@@ -1,0 +1,70 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>dbstore-mongo</artifactId>
+
+    <parent>
+        <groupId>com.cinefms.dbstore</groupId>
+        <artifactId>dbstore</artifactId>
+        <version>0.10.14</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.cinefms.dbstore</groupId>
+            <artifactId>dbstore-api</artifactId>
+            <version>0.10.14</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cinefms.dbstore</groupId>
+            <artifactId>dbstore-query-mongo</artifactId>
+            <version>0.10.14</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cinefms.dbstore</groupId>
+            <artifactId>dbstore-query-api</artifactId>
+            <version>0.10.14</version>
+        </dependency>
+        <!-- Explicitly add query-api for test compile so DBStoreQuery is available in signatures -->
+
+        <dependency>
+            <groupId>org.mongojack</groupId>
+            <artifactId>mongojack</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver-sync</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testcontainers</groupId>
+            <artifactId>testcontainers</artifactId>
+            <scope>test</scope>
+        </dependency>
+        
+        <!-- Spring Test for integration tests -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
